@@ -1,2 +1,2 @@
 # adventofcode2024
-Advent Of Code
+Resolution Advent of Code 2024
