@@ -32,25 +32,13 @@ pub fn exec_day1() -> Result<(), Error> {
     columna1a.sort();
     columna2a.sort();
 
-    let mut number1: i32;
-    let mut number2: i32;
-
-    let mut distance: i32;
-
     let mut suma_total_a: i32 = 0;
 
-    let mut counter;
-
-    counter = columna1a.len();
-    
-    while counter > 0 {
-        number1 = columna1a.pop().unwrap();
+    while let Some(number1) = columna1a.pop() {
         number2 = columna2a.pop().unwrap();
         distance = (number1 - number2).abs();
 
         suma_total_a = suma_total_a + distance;
-
-        counter = counter - 1;
 
         // println!("- Distance: {:?}", distance);
     }
