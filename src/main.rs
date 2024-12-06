@@ -1,6 +1,6 @@
 mod day1;
 mod day2;
-// mod day3;
+mod day3;
 // mod day4;
 // mod day5;
 // mod day6;
@@ -31,7 +31,7 @@ fn main() {
             let _ = day2::exec_day2();
         }
         "day3" => {
-//            let _ = day3::exec_day3();
+            let _ = day3::exec_day3();
         }
         "day4" => {
 //            let _ = day4::exec_day4();
